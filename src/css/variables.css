@@ -1,0 +1,13 @@
+:root {
+    --color-primary: hsl(257, 40%, 49%);
+    --color-secundary: hsl(300, 69%, 71%);
+    --color-text: #fff;
+}
+
+:root {
+    --font-primary: 'Open Sans', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+    --font-size-base: 1.6rem;
+    --font-size-large: 2.5rem;
+    --font-size-extra-large: 3rem
+}

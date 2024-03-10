@@ -1,0 +1,112 @@
+html{
+    font-family: var(--font-primary);
+    font-size: 62.5%;
+    color: var(--color-text);
+}
+
+body{
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    max-width: 1440px;
+    min-width: 375px;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "home-image home-message"
+        "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px calc(100vh - 250px) 100px;
+}
+
+.header{
+    grid-area: header;
+    margin: auto 50px;
+}
+
+.header img{
+    max-width: 200px;
+    min-width: 155px;
+}
+
+.home-image{
+    grid-area: home-image;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: auto 20px;
+}
+
+.home-image img{
+    max-width: 85%;
+    height: auto;
+}
+
+.home-message{
+    grid-area: home-message;
+    display: flex;
+    flex-direction: column;
+    margin: auto 20px;
+}
+
+.home-message h1{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-extra-large);
+    font-weight: 600;
+}
+
+.home-message h2{
+    max-width: 70%;
+    font-size: var(--font-size-base);
+    font-weight: 400;
+    margin: 30px 0;
+}
+
+.home-message button{
+    font-size: var(--font-size-base);
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 25px;
+    color: var(--color-primary);
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 0 80px;
+}
+
+.footer i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    border: 1px solid var(--color-text);
+    color: var(--color-text);
+    font-size: var(--font-size-large);
+    margin: 15px;
+    padding: 0 20px;
+}
+
+.home-message button:hover{
+    color: var(--color-text);
+    background-color: var(--color-secundary);
+    cursor: pointer;
+}
+
+.footer i:hover{
+    color: var(--color-secundary);
+    border-color: var(--color-secundary);
+}
